@@ -1,3 +1,6 @@
+#pragma once
+//header only 
+
 #include <iostream>
 #include <vector>
 #include <string>
