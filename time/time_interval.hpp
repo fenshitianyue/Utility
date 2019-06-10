@@ -15,7 +15,7 @@ public:
   }
   ~TimeInterval(){
     gettimeofday(&end, NULL);
-    std::cout << 1000 * (end.tv_sec - start.tv_sec) + (start.tv_usec - end.tv_usec) / 1000 << "ms"
+    std::cout << 1000 * (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 1000 << "ms"
               << std::endl;
   }
 private:
